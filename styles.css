@@ -63,13 +63,29 @@ p {
 }
 
 .table {
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #0f141e;
+    border-radius: 24px;
+    padding: 24px;
 }
 
-.row {
-    margin-right: auto;
+.contact {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-style: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color:#0f141e;
+    padding: 12px;
 }
 
 /* box model */
