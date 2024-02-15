@@ -48,12 +48,21 @@ p {
     color: #474747;
 } 
 .avatar {
-    width: 200px;
+    width: 200px ;
+    height: 200px;
     border-radius: 24px;
 }
 
+.info-text {
+    margin-left: 24px;
+}
+
+.info-text h4 {
+    margin-bottom: 8px;
+}
 
 .info {
+    display: flex;
     margin-bottom: 48px;
 }
 
@@ -76,22 +85,91 @@ p {
 
 .form-group label {
     display: block;
-    font-style: 16px;
+    font-size: 16px; /* Исправлено с font-style на font-size */
+    margin: 4px 0;
 }
 
-.form-group input {
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-repeat: 24px;
+    border-radius: 12px;
+    background-color: #fff; 
+    color: #0f141e;
+    padding: 12px;
+    outline: none;
+    font-family: 'Golos Text', sans-serif; /* Добавьте запасной шрифт */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Добавлено для обеспечения переноса элементов, если не хватает места */
+    margin-bottom: 12px;
+}
+
+.row > .form-group {
+    flex: 1; /* Изменено с фиксированной ширины на гибкую */
+    min-width: 250px; /* Минимальная ширина для поддержания адаптивности */
+    margin-right: 12px; 
+}
+
+.row > .form-group:last-child {
+    margin-right: 0; /* Удаление маржина справа для последнего элемента в строке */
+}
+
+/* Исправление для кнопки отправки, если необходимо */
+input[type="button"] {
+    margin-top: 24px;
+    width: 100%;
+    cursor: pointer; /* Добавление курсора указателя для лучшей интерактивности */
+    padding: 24px 8px; /* Пример стилизации */
+    border: none;
+    background: none;
+    border: 1px solid #0f141e;
+    border-radius: 12px;
+    color: rgb(73, 73, 73); /* Цвет текста */
+    font-size: 16px;
+}
+
+
+/* .form-group label {
+    display: block;
+    font-style: 16px;
+    margin: 4px 4px;
+}
+
+.form-group input, .form-group textarea {
     width: 100%;
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid #fff;
     color:#0f141e;
     padding: 12px;
+    outline: none;
+    font-family: Golos Text;
 }
+
+.row {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.row > .form-group {
+    width: 50%;
+
+}
+
+.row > .form-group:first-child {
+    margin-right: 12px; 
+} */
 
 /* box model */
 
 .container {
 max-width: 800px;
 margin: 0px 96px;
+padding-top: 32px;
 }
 
