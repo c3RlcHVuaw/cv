@@ -1,63 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>CV</title>
-</head>
-<body>
-    <h1>Stepan Korovin</h1>
-    <p><strong>UX/UI Designer, Font-end dev. /strong></p>
-    <p><em> In my spare time, I do various projects, watch various videos on product, UX/UI design, participate in hackathons</em></p>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Stepan Korovin CV</title>
+    </head>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+    <div class="container">
+        <div class="info">
+            <img src="images/173a008888e973ea51e6f5fa809d7972.jpg" alt="photo" class="avatar">
 
-    <hr>
+            <h1>Stepan Korovin</h1>
+            <p><strong>UX/UI Designer, Font-end dev. </strong></p>
+            <p>In my spare time, I do various projects, watch various videos on product, UX/UI design, participate in hackathons</p>
 
-    <h2>Telegram</h2>
-    <ul>
-        <li><a href="https://t.me/c3RlcHVuaw">click<з</a></li>
-    </ul>
-    <h2>My hobby</h2>
-    <ol>
-        <li>Listen to music</li>
-        <li>Sports</li>
-        <li>Painting</li>
-    </ol>
+            <h4>Social</h4>
+            <a href="https://t.me/c3RlcHVuaw">Telegram</a>
+            |
+            <a href="https://www.behance.net/altten">Behance</a>
+    </div>
 
-    <h2>Work experience</h2>
-    <table>
-            <th>Compamy</th>
-            <th>Post</th>
-            <th>Years of work</th>
-        <tr>
-            
-            <td>Hackathon TSPK</td>
-            <td>UX/UI Designer</td>
-            <td>Octomber 2023</td>
-        </tr>
-        <tr>
-            <td>хз</td>
-            <td>хз</td>
-            <td>хз</td>
-        </tr>
-    </table>
-    <h2>Contact</h2>
+
+    <div class="card">
+        <h2>My hobby</h2>
+            <ol class="list">
+            <li>Listen to music</li>
+            <li>Sports</li>
+            <li>Painting</li>
+            </ol>
+    </div>
+
+    <div class="card">
+        <h2>Work experience</h2>
+            <div class="table">
+                <div class="row">
+                    <h3>Сompamy</h3>
+                    <h3>Post</h3>
+                    <h3>Years of work</h3>
+    </div>
+        <div class="cell">
+                    <p>Hackathon TSPK</p>
+                    <p>UX/UI Designer</p>
+                    <p>Octomber 2023</p>
+                    </div>
+            </div>
+    </div>
+        <!-- <div class="table">
+    <div class="row">
+        <div class="cell">Сompamy</div>
+        <div class="cell">Hackathon TSPK</div>
+    </div>
+    <div class="row">
+        <div class="cell">Post</div>
+        <div class="cell">UX/UI Designer</div>
+    </div>
+    <div class="row">
+        <div class="cell">Years of work</div>
+        <div class="cell">Octomber 2023</div>
+    </div>
+    </div>
+    </div> -->
+   
+    <div class="card">
+        <h2>Contact</h2>
+        <form action="text">
+            <label for="text">Name and surname</label>
+            <input type="text"
+            placeholder="Ivan Ivanov">
+    </form>
+    <form action="email">
+        <label for="email">Email</label>
+        <input type="email"
+        placeholder="mail@gmail.com">
+    </form>
+    <br>
     <form action="text">
-        <label for="text">Name and surname</label>
-        <input type="text"
-        placeholder="Ivan Ivanov">
-</form>
-<form action="email">
-    <label for="email">Email</label>
-    <input type="email"
-    placeholder="mail@gmail.com">
-</form>
-<br>
-<form action="text">
-    <label for="text1">текстик</label>
-    <br>
-    <textarea name="text1" id="text1" cols="30" rows="10"></textarea>
+        <label for="text1">Your text</label>
+        <br>
+        <textarea name="text1" id="text1" cols="30" rows="10"></textarea>
 
-    <br>
-    <input type="button" value="БАМ"> 
-</body>
-</body>
-</html>
+        <br>
+        <input type="button" value="Send"> 
+        <hr>
+    </div>
+    </div>
+    </body>
+    </body>
+    </html>

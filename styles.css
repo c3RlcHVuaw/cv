@@ -1,0 +1,81 @@
+body {
+    background: #ffffff;
+    color: #0f141e;
+
+    font-size: 16px;
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.card {
+    padding: 24px;
+    background: rgb(238, 238, 255);
+    margin-bottom: 24px;
+    border-radius: 24px;
+}
+
+.card h2 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.list {
+    padding: 0 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 4px;
+}
+
+a:hover {
+    color: #707070;
+}
+
+a:active {
+    color: rgb(0, 116, 116);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    color: #474747;
+} 
+.avatar {
+    width: 200px;
+    border-radius: 24px;
+}
+
+
+.info {
+    margin-bottom: 48px;
+}
+
+.info p {
+    margin: 0;
+    font-style: normal;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.row {
+    margin-right: auto;
+}
+
+/* box model */
+
+.container {
+max-width: 800px;
+margin: 0px 96px;
+}
+
