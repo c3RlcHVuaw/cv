@@ -71,6 +71,14 @@ p {
     font-style: normal;
 }
 
+@media (max-width: 700px) {
+    .info{
+    text-align: center;
+    display: block;     
+    }
+
+}
+
 .table {
     text-align: left;
     width: 100%;
@@ -79,13 +87,21 @@ p {
     padding: 24px;
 }
 
+@media (max-width: 700px) {
+    .table th, td {
+    font-size: 12px;
+    }
+    
+}
+
+
 .contact {
     text-align: left;
 }
 
 .form-group label {
     display: block;
-    font-size: 16px; /* Исправлено с font-style на font-size */
+    font-size: 16px; 
     margin: 4px 0;
 }
 
@@ -105,12 +121,12 @@ p {
 
 .row {
     display: flex;
-    flex-wrap: wrap; /* Добавлено для обеспечения переноса элементов, если не хватает места */
+    flex-wrap: wrap;
     margin-bottom: 12px;
 }
 
 .row > .form-group {
-    flex: 1; /* Изменено с фиксированной ширины на гибкую */
+    flex: 1; 
     min-width: 250px; /* Минимальная ширина для поддержания адаптивности */
     margin-right: 12px; 
 }
